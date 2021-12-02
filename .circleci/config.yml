@@ -14,9 +14,6 @@ jobs:
             sudo pip3 install awsebcli --upgrade
       - run: npm install
       - run:
-          name: Test
-          command:  npm run test-prod
-      - run:
           name: build
           command: |
             if [ $CIRCLE_BRANCH = 'main' ]; then
