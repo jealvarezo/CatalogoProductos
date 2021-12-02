@@ -17,10 +17,10 @@ jobs:
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
           from: bucket
           to: 's3://tienda-virtual-catalogo/prefix'
-      - aws-s3/copy:
-          arguments: '--dryrun'
-          from: bucket/build_asset.txt
-          to: 's3://tienda-virtual-catalogo'
+      #- aws-s3/copy:
+      #    arguments: '--dryrun'
+      #    from: bucket/build_asset.txt
+      #    to: 's3://tienda-virtual-catalogo'
 workflows:
   s3-example:
     jobs:
