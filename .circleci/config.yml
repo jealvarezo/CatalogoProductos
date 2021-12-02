@@ -6,12 +6,6 @@ jobs:
       image: ubuntu-2004:202010-01
     steps:
       - checkout
-      - run:
-          name: Installing AWS CLI
-          command: |
-            sudo apt-get update
-            sudo apt install python3-pip
-            sudo pip3 install awsebcli --upgrade
       - run: npm install
       - run:
           name: build
