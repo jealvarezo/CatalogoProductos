@@ -17,7 +17,7 @@ jobs:
           root: .
           paths:
             - .
-  test:
+  test: 
     machine:
       image: ubuntu-2004:202010-01
     steps:
